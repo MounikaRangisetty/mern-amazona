@@ -32,7 +32,7 @@ export default function ResetPasswordScreen() {
       return;
     }
     try {
-      await Axios.post('/api/users/reset-password', {
+      await Axios.post('http://54.92.143.126:4000/api/users/reset-password', {
         password,
         token,
       });
