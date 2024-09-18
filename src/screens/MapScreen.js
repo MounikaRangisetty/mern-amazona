@@ -44,7 +44,7 @@ export default function MapScreen() {
   };
   useEffect(() => {
     const fetch = async () => {
-      const { data } = await axios('/api/keys/google', {
+      const { data } = await axios('http://54.92.143.126:4000/api/keys/google', {
         headers: { Authorization: `BEARER ${userInfo.token}` },
       });
       setGoogleApiKey(data.key);
