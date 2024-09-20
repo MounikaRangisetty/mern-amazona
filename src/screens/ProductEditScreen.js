@@ -68,7 +68,7 @@ export default function ProductEditScreen() {
     const fetchData = async () => {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
-        const { data } = await axios.get(`http://54.92.143.126:4000/api/products/${productId}`);
+        const { data } = await axios.get(`http://34.235.146.105:4000/api/products/${productId}`);
         setName(data.name);
         setSlug(data.slug);
         setPrice(data.price);
