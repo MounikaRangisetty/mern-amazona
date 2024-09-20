@@ -49,7 +49,7 @@ export default function PlaceOrderScreen() {
       dispatch({ type: 'CREATE_REQUEST' });
 
       const { data } = await Axios.post(
-        'http://54.92.143.126:4000/api/orders',
+        'http://34.235.146.105:4000/api/orders',
         {
           orderItems: cart.cartItems,
           shippingAddress: cart.shippingAddress,
