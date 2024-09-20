@@ -29,7 +29,7 @@ export default function SignupScreen() {
       return;
     }
     try {
-      const { data } = await Axios.post('http://54.92.143.126:4000/api/users/signup', {
+      const { data } = await Axios.post('http://34.235.146.105:4000/api/users/signup', {
         name,
         email,
         password,
