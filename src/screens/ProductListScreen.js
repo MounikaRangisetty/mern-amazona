@@ -80,7 +80,7 @@ export default function ProductListScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get(`http://54.92.143.126:4000/api/products/admin?page=${page} `, {
+        const { data } = await axios.get(`http://34.235.146.105:4000/api/products/admin?page=${page} `, {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         });
 
@@ -100,7 +100,7 @@ export default function ProductListScreen() {
       try {
         dispatch({ type: 'CREATE_REQUEST' });
         const { data } = await axios.post(
-          'http://54.92.143.126:4000/api/products',
+          http://34.235.146.105:4000/api/products',
           {},
           {
             headers: { Authorization: `Bearer ${userInfo.token}` },
@@ -121,7 +121,7 @@ export default function ProductListScreen() {
   const deleteHandler = async (product) => {
     if (window.confirm('Are you sure to delete?')) {
       try {
-        await axios.delete(`http://54.92.143.126:4000/api/products/${product._id}`, {
+        await axios.delete(`http://34.235.146.105:4000/api/products/${product._id}`, {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         });
         toast.success('product deleted successfully');
