@@ -100,7 +100,7 @@ export default function ProductListScreen() {
       try {
         dispatch({ type: 'CREATE_REQUEST' });
         const { data } = await axios.post(
-          http://34.235.146.105:4000/api/products',
+          'http://34.235.146.105:4000/api/products',
           {},
           {
             headers: { Authorization: `Bearer ${userInfo.token}` },
