@@ -37,7 +37,7 @@ export default function ProfileScreen() {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        'http://54.92.143.126:4000/api/users/profile',
+        'http://34.235.146.105:4000/api/users/profile',
         {
           name,
           email,
